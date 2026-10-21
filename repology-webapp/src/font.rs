@@ -21,9 +21,10 @@ struct Font {
 // Alternatively, we could precalculate advances for all expected glyphs
 // (ASCII + …?) and shore these instead of a font
 const FONT_DIRS: &[&str] = &[
-    "/usr/share/fonts/truetype/dejavu", // Ubuntu
-    "/usr/local/share/fonts/dejavu",    // FreeBSD
-    "/usr/share/fonts/X11/dejavu",      // Exherbo
+    "/usr/share/fonts/truetype/dejavu",   // Ubuntu
+    "/usr/local/share/fonts/dejavu",      // FreeBSD
+    "/usr/share/fonts/X11/dejavu",        // Exherbo
+    "/usr/share/fonts/dejavu-sans-fonts", // Amazon Linux, Fedora
 ];
 
 impl Font {
